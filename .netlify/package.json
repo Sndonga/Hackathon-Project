@@ -1,8 +1,0 @@
-{
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "Static HTML/CSS portfolio",
-    "scripts": {
-      "test": "echo \"No build required\" && exit 0"
-    }
-  }
