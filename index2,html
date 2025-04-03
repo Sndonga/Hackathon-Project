@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shalom's Portfolio</title>
-    <!-- Fixed Font Loading -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond:wght@400;600&display=swap">
-    <!-- CSS -->
-    <link href="/styles.css" rel="stylesheet">
-    <!-- Lottie Preload -->
-    <link rel="preconnect" href="https://assets1.lottiefiles.com">
+    <!-- Font Loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Welcome Animation -->
@@ -144,12 +142,17 @@
         });
      </script>
      
-    <!-- Fixed Scripts -->
+    <!--Scripts -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         setTimeout(() => {
             document.getElementById('welcome-screen').classList.add('hide-welcome');
         }, 3000);
     </script>
+    <script>
+        document.querySelector('lottie-player').addEventListener('ready', () => {
+          console.log('Animation fully loaded');
+        });
+      </script>
 </body>
 </html>
