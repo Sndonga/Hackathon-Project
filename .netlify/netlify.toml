@@ -1,7 +1,0 @@
-[build]
-  command = "echo 'Static site - no build needed'"
-  publish = "."
-  ignore = "git diff --quiet HEAD^ HEAD -- ./"
-
-[build.environment]
-  HUGO_VERSION = "0.0" # Disables Hugo detection
