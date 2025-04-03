@@ -1,0 +1,15 @@
+{
+    "build": {
+      "environment": {
+        "NETLIFY_USE_LEGACY_BUNDLER": "true"
+      }
+    },
+    "headers": [
+      {
+        "for": "/*",
+        "values": {
+          "Cache-Control": "no-transform, no-cache"
+        }
+      }
+    ]
+  }
